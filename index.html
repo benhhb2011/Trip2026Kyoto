@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaka Trip</title>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --text: #f0f0f0;
+            --neon-b: #00f3ff;
+            --neon-p: #ff007f;
+            --neon-g: #39ff14;
+            --sh-b: 0 0 10px #00f3ff, 0 0 20px #00f3ff;
+            --sh-p: 0 0 10px #ff007f, 0 0 20px #ff007f;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1, h2 { text-align: center; font-weight: 700; letter-spacing: 2px; }
+        h1 { color: #fff; text-shadow: var(--sh-p); font-size: 2.5rem; margin-bottom: 20px; }
+        h2 { color: #fff; text-shadow: var(--sh-b); font-size: 1.5rem; margin-top: 30px; border-bottom: 1px solid var(--neon-b); padding-bottom: 5px; }
+        .hero-img { width: 100%; max-height: 300px; object-fit: cover; border-radius: 8px; border: 2px solid var(--neon-p); box-shadow: var(--sh-p); margin-bottom: 20px; }
+        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .card:hover { border-color: var(--neon-b); box-shadow: 0 0 8px rgba(0,243,255,0.3); }
+        .highlight { color: var(--neon-g); font-weight: bold; }
+        .order-no { color: #aaa; font-size: 0.9rem; margin-bottom: 10px; }
+        .flight-row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px dashed #333; }
+        .hotel-title { color: var(--neon-p); font-weight: bold; font-size: 1.1rem; }
+        .time-box { background: #262626; padding: 8px; border-radius: 4px; margin-top: 8px; font-size: 0.9rem; display: flex; justify-content: space-between; }
+        a { color: var(--neon-b); text-decoration: none; word-break: break-all; transition: all 0.3s; }
+        a:hover { text-shadow: var(--sh-b); color: #fff; }
+        .btn-list { display: flex; flex-direction: column; gap: 10px; }
+        .btn { border: 1px solid var(--neon-b); padding: 10px; border-radius: 6px; text-align: center; font-weight: bold; background: rgba(0,243,255,0.05); }
+        .btn-p { border-color: var(--neon-p); background: rgba(255,0,127,0.05); }
+        .btn-p:hover { text-shadow: var(--sh-p); border-color: var(--neon-p); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>OSAKA TRIP</h1>
+    
+    <!-- 主視覺圖片 -->
+    <img src="Home.jpg" alt="Home" class="hero-img">
+
+    <!-- 航班資訊 -->
+    <h2>FLIGHT INFO</h2>
+    <div class="card">
+        <div class="order-no">Trip.com Order: 1359048323309502</div>
+        <div class="flight-row">
+            <span><span class="highlight">去程</span> 9 Oct 2026</span>
+            <span>CX566</span>
+        </div>
+        <div class="flight-row" style="border:none;">
+            <span>01:55 HKG (T1)</span>
+            <span>➔</span>
+            <span>06:40 KIX (T1)</span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="flight-row">
+            <span><span class="highlight">回程</span> 12 Oct 2026</span>
+            <span>CX569</span>
+        </div>
+        <div class="flight-row" style="border:none;">
+            <span>19:25 KIX (T1)</span>
+            <span>➔</span>
+            <span>22:40 HKG (T1)</span>
+        </div>
+    </div>
+
+    <!-- 住宿資訊 -->
+    <h2>HOTEL INFO</h2>
+    
+    <!-- 住宿 1 -->
+    <div class="card">
+        <div class="hotel-title">住宿 1. Onyado Nono Kyotoshichijo</div>
+        <div style="font-size:0.9rem; color:#ccc; margin:5px 0;">9 Oct - 10 Oct</div>
+        <div style="font-size:0.85rem; margin-bottom:8px;">491番地 Zaimokucho, Shimogyo Ward, Kyoto, 600-8146, Japan</div>
+        <a href="https://maps.app.goo.gl/r7geBY5CHyKaQA5m7?g_st=awb" target="_blank">📍 Open in Google Maps</a>
+        <div class="time-box">
+            <span>Check-in: <span class="highlight">15:00</span></span>
+            <span>Check-out: <span class="highlight">11:00</span></span>
+        </div>
+    </div>
+
+    <!-- 住宿 2 -->
+    <div class="card">
+        <div class="hotel-title">住宿 2. Mercure Kyoto Miyazu Resort & Spa</div>
+        <div style="font-size:0.9rem; color:#ccc; margin:5px 0;">10 Oct - 11 Oct</div>
+        <div style="font-size:0.85rem; margin-bottom:8px;">Koaza Iwamoto, Aza, 58 Tai, Miyazu, Kyoto 626-0068, Japan</div>
+        <a href="https://maps.app.goo.gl/rs8t9JMngyKCNUEP8?g_st=awb" target="_blank">📍 Open in Google Maps</a>
+        <div class="time-box">
+            <span>Check-in: <span class="highlight">15:00</span></span>
+            <span>Check-out: <span class="highlight">11:00</span></span>
+        </div>
+    </div>
+
+    <!-- 住宿 3 -->
+    <div class="card">
+        <div class="hotel-title">住宿 3. Hotel Hankyu RESPIRE OSAKA</div>
+        <div style="font-size:0.9rem; color:#ccc; margin:5px 0;">11 Oct - 12 Oct</div>
+        <div style="font-size:0.85rem; margin-bottom:8px;">1-1 Ofukacho, Kita Ward, Osaka, 530-0011, Japan</div>
+        <a href="https://maps.app.goo.gl/xavHD18nDx5jkrZ5A?g_st=awb" target="_blank">📍 Open in Google Maps</a>
+        <div class="time-box">
+            <span>Check-in: <span class="highlight">15:00</span></span>
+            <span>Check-out: <span class="highlight">11:00</span></span>
+        </div>
+    </div>
+
+    <!-- 實用連結與提示 -->
+    <h2>TIPS & LINKS</h2>
+    <div class="btn-list">
+        <a href="https://www.ofx.com/en-hk/exchange-rates/jpy/" target="_blank" class="btn">
+            💵 Tips 1: JPY Real-Time Exchange Rate
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenernv6Q7fJwaTZlUk-xf8uErFLhApdGJ2x__WkmZ9r6cOhA/viewform?usp=publish-editor" target="_blank" class="btn btn-p">
+            📝 Tips 2: Input Trip Expense (Form)
+        </a>
+        <a href="https://docs.google.com/spreadsheets/d/1DLXwcb4xjMNHs4kD3aQB5joA6ygdw5iEF_sbD93J5Ac/edit?resourcekey=&gid=778118910#gid=778118910" target="_blank" class="btn btn-p">
+            📊 Tips 2: View Expense Records (Sheet)
+        </a>
+        <a href="https://www.taxfreeshops.jp/zhcn/tieup/coupon" target="_blank" class="btn" style="border-color:var(--neon-g);">
+            🛍️ Tips 3: Taxfree Coupons Website
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
